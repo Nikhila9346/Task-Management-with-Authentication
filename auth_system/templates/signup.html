@@ -1,0 +1,25 @@
+{% extends "auth_main.html" %}
+
+{% block content %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">USERNAME</label>
+        <br>
+        <input type="text" name="username">
+        <br><br>
+        <label for="">EMAIL</label>
+        <br>
+        <input type="email" name="email">
+        <br><br>
+        <label for="">PASSWORD</label>
+        <br>
+        <input type="password" name="password1">
+        <br><br>
+        <label for="">CONFIRM PASSWORD</label><br>
+        <input type="password" name="password2">
+        <br><br>
+        <input type="submit" value="SIGNUP">
+    </form>
+
+{% endblock content %}
