@@ -1,0 +1,9 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <label for="">TASK</label>
+    <input type="text" name="name">
+    <label for="">DESCRIPTION</label>
+    <input type="text" name="desc">
+    <br><br>
+    <input type="submit" value="ADD TASK">
+</form>

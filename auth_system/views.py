@@ -37,7 +37,7 @@ def login_user(request):
 
         if user is not None:
             login(request, user)
-            return HttpResponse("HELLO WELCOME")
+            return redirect('home')
         
 
     return render(request, 'login.html')

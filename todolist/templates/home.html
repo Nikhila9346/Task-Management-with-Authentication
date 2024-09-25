@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% include "form.html" %}
+
+<h1>Below are your tasks</h1>
+
+{% for task in tasks %}
+    <h3>{{ task.name }}</h3>
+{% endfor %}
+
+{% endblock content %}
+
